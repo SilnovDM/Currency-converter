@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <div class="converter-logo">
+        <img src="logo3.png" alt="logo1" />
+      </div>
+      <div class="container">
+        <div class="greetings-text">Конвертер валют</div>
+      </div>
+      <div class="converter-logo">
+        <img src="logo3.png" alt="logo1" />
+      </div>
+    </header>
+    <main>
+      <div class="convertion-container">
+        <div class="select1">
+          <label for="first-currency">Первая валюта</label><br />
+          <select name="first-currency" id="first-currency">
+            <option value=""></option>
+            <option value="AUD">Австралийский доллар</option>
+            <option value="AZN">Азербайджанский манат</option>
+            <option value="AMD">Армянский драм</option>
+            <option value="BYN">Белорусский рубль</option>
+            <option value="BGN">Болгарский лев</option>
+            <option value="BRL">Бразильский реал</option>
+            <option value="HUF">Венгерский форинт</option>
+            <option value="HKD">Гонконгский доллар</option>
+            <option value="DKK">Датская крона</option>
+            <option value="USD">Доллар США</option>
+            <option value="EUR">Евро</option>
+            <option value="INR">Индийская рупия</option>
+            <option value="KZT">Казахстанская тенге</option>
+            <option value="CAD">Канадский доллар</option>
+            <option value="KGS">Киргизский сом</option>
+            <option value="CNY">Китайский юань</option>
+            <option value="MDL">Молдавский лей</option>
+            <option value="NOK">Норвежская крона</option>
+            <option value="PLN">Польский злотый</option>
+            <option value="RON">Румынский лей</option>
+            <option value="XDR">СДР(специальные права заимствования)</option>
+            <option value="SGD">Сингапурский доллар</option>
+            <option value="TJS">Таджикский сомони</option>
+            <option value="TRY">Турецкая лира</option>
+            <option value="TMT">Новый туркменский манат</option>
+            <option value="UZS">Узбекский сум</option>
+            <option value="UAH">Украинская гривна</option>
+            <option value="GBP">
+              Фунт стерлингов Соединённого королевства
+            </option>
+            <option value="CZK">Чешская крона</option>
+            <option value="SEK">Шведская крона</option>
+            <option value="CHF">Швейцарский франк</option>
+            <option value="ZAR">Южноафриканский рэнд</option>
+            <option value="KRW">Вон Республики Корея</option>
+            <option value="JPY">Японская йена</option></select
+          ><br />
+          <div class="rubles-value">
+            <div class="label-rubles">Курс в рублях:</div>
+            <div class="currency1-rubles"></div>
+          </div>
+        </div>
+        <div class="select1">
+          <label for="second-currency">Вторая валюта</label><br />
+          <select name="second-currency" id="second-currency" disabled>
+            <option value=""></option>
+            <option value="AUD">Австралийский доллар</option>
+            <option value="AZN">Азербайджанский манат</option>
+            <option value="AMD">Армянский драм</option>
+            <option value="BYN">Белорусский рубль</option>
+            <option value="BGN">Болгарский лев</option>
+            <option value="BRL">Бразильский реал</option>
+            <option value="HUF">Венгерский форинт</option>
+            <option value="HKD">Гонконгский доллар</option>
+            <option value="DKK">Датская крона</option>
+            <option value="USD">Доллар США</option>
+            <option value="EUR">Евро</option>
+            <option value="INR">Индийская рупия</option>
+            <option value="KZT">Казахстанская тенге</option>
+            <option value="CAD">Канадский доллар</option>
+            <option value="KGS">Киргизский сом</option>
+            <option value="CNY">Китайский юань</option>
+            <option value="MDL">Молдавский лей</option>
+            <option value="NOK">Норвежская крона</option>
+            <option value="PLN">Польский злотый</option>
+            <option value="RON">Румынский лей</option>
+            <option value="XDR">СДР(специальные права заимствования)</option>
+            <option value="SGD">Сингапурский доллар</option>
+            <option value="TJS">Таджикский сомони</option>
+            <option value="TRY">Турецкая лира</option>
+            <option value="TMT">Новый туркменский манат</option>
+            <option value="UZS">Узбекский сум</option>
+            <option value="UAH">Украинская гривна</option>
+            <option value="GBP">
+              Фунт стерлингов Соединённого королевства
+            </option>
+            <option value="CZK">Чешская крона</option>
+            <option value="SEK">Шведская крона</option>
+            <option value="CHF">Швейцарский франк</option>
+            <option value="ZAR">Южноафриканский рэнд</option>
+            <option value="KRW">Вон Республики Корея</option>
+            <option value="JPY">Японская йена</option>
+          </select>
+          <div class="rubles-value">
+            <div class="label-rubles">Курс в рублях:</div>
+            <div class="currency2-rubles"></div>
+          </div>
+        </div>
+
+        <input
+          type="button"
+          disabled
+          value="Конвертировать"
+          id="convertion-button"
+        />
+
+        <div class="result-output"></div>
+      </div>
+
+      <div class="reference-and-sign">
+        <div>
+          Актуальный курс <br />
+          взят с сайта
+          <a href="https://www.cbr-xml-daily.ru/daily.xml" target="_blanc"
+            >cbr.ru</a
+          >
+        </div>
+        <div>Created by <br /><span>Dmitriy Silnov</span></div>
+      </div>
+    </main>
+  </body>
+  <script src="script.js"></script>
+</html>
